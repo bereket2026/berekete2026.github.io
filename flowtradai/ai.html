@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Assistant – FlowTradeAI</title>
+  <style>
+    body { background:#0b1220; color:white; font-family:Arial; padding:40px }
+    textarea,button { width:100%; padding:12px; margin-top:10px }
+    button { background:#4aa3ff; border:none; font-weight:bold }
+    .box { background:#111a2e; padding:20px; border-radius:10px; margin-top:20px }
+  </style>
+</head>
+<body>
+
+<h1>AI Trading Assistant</h1>
+
+<textarea id="q" placeholder="Ask about BTC, ETH, strategy..."></textarea>
+<button onclick="askAI()">Ask AI</button>
+
+<div id="a" class="box">AI response will appear here.</div>
+
+<script>
+function askAI(){
+  const q = document.getElementById('q').value;
+  document.getElementById('a').innerText =
+    'AI Insight: Market shows momentum shift. Always manage risk. (Demo AI)';
+}
+</script>
+
+</body>
+</html>
